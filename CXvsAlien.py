@@ -28,17 +28,17 @@ while True:
     screen = pygame.display.set_mode((screen_width, screen_height))
 
     # 设置游戏标题
-    pygame.display.set_caption("简易跑酷游戏")
+    pygame.display.set_caption("Default Game")
 
     # 加载角色和背景图片
-    character = pygame.image.load("2023-12-04_08-26-05_134.jpg")
-    background = pygame.image.load("2023-08-25_13-55-35_722.jpg")
+    character = pygame.image.load("character.jpg")
+    background = pygame.image.load("background.jpg")
 
     # 获取背景图片的实际宽度和高度
     background_image_width, background_image_height = background.get_size()
 
     # 加载金币图片
-    coin_image = pygame.image.load("R.png")
+    coin_image = pygame.image.load("coin.png")
 
     # 更改金币图片大小
     coin_width = 80
@@ -58,7 +58,7 @@ while True:
     character_y = screen_height - character.get_height()
 
     # Load obstacle texture image
-    obstacle_texture = pygame.image.load("CXalien.png")
+    obstacle_texture = pygame.image.load("alien.png")
     # Define obstacle width and height
     obstacle_width = 200
     obstacle_height = 100
